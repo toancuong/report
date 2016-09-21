@@ -290,6 +290,11 @@ msgid "Last Updated on"
 msgstr "Cập nhật lần cuối vào"
 
 #. module: report
+#: model:ir.ui.view,arch_db:report.external_layout_header
+msgid "Administration Human Resource Department"
+msgstr "Phòng hành chính nhân sự"
+
+#. module: report
 #: selection:report.paperformat,format:0
 msgid "Ledger  28  431.8 x 279.4 mm"
 msgstr ""
