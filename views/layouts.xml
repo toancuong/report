@@ -74,16 +74,21 @@
 
 <template id="external_layout_header">
     <div class="header">
-        <div class="row">
-            <div class="col-xs-2">
-                <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo" style="max-height: 100px;"/>
-            </div>
-			<div class="col-xs-10" name="company_address">
-				<div t-field="company.partner_id"
-					t-field-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": true}'/>
-				<div>Administration Human Resource Department</div>
-			</div>
-        </div>
+        <table>
+        	<tr>
+        		<td>
+        			<img src="/report/static/src/img/LogoTrungHien.png" style="max-height: 100px;"/>
+        		</td>
+        		<td style="margin-left: 5px;"><strong><div name="company_address">
+					<div t-field="company.partner_id"
+						t-field-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": true}'/>
+					<div>Administration Human Resource Department</div>
+					</div>
+				</strong>
+        		</td>
+        	</tr>
+        </table>
+        
     </div>
 </template>
 
